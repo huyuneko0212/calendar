@@ -16,8 +16,9 @@ function App() {
     alert(arg.date);
   }, []);
   const [events,setEvents] = useState<Event[]>([]);
-  
-  
+  const one_way=330;
+  let attendance_days=events.length;
+  const commute_expenses=attendance_days*one_way*2;
   
   return (
     <>
@@ -49,6 +50,7 @@ function App() {
   />
   <span>
   出勤日：
+  </span>
   {events.map((event,index) => {
     const date = new Date(event.start)
     console.log(date.getDate());
@@ -60,9 +62,9 @@ function App() {
     )
   })
 }
-</span>
   <hr />
-  {events.length*330*2}
+  <span>通勤費：</span>
+  {commute_expenses}
     </>
 
     
