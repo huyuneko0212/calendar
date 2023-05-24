@@ -47,6 +47,8 @@ function App() {
   }
   
   />
+  <span>
+  出勤日：
   {events.map((event,index) => {
     const date = new Date(event.start)
     console.log(date.getDate());
@@ -57,7 +59,10 @@ function App() {
       </span>
     )
   })
-  }
+}
+</span>
+  <hr />
+  {events.length*330*2}
     </>
 
     
