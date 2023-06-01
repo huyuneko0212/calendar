@@ -29,7 +29,7 @@ function App() {
             initialView="dayGridMonth"
             locale="ja"
             editable={false}
-            // events={events}
+            events={events}
             selectable={true}
             select={function (arg) {
               
