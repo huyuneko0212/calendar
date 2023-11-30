@@ -44,8 +44,9 @@ function App() {
     clickInfo.event.remove();
   }, []);
 
-
+  // 片道料金
   const one_way = 330;
+
   let attendance_days = currentEvents.length;
   const commute_expenses = attendance_days * one_way * 2;
 
